@@ -63,7 +63,7 @@
       <div id="map"></div>
       <div id="side-panel">
         <h2>List of Restaurants near Campus</h2>
-        <button>Sort by Rating</button>
+        <button id="sort-button">Sort by Rating</button>
 
         <table>
           <tr>
@@ -133,7 +133,7 @@
           cell2.innerHTML = restaurants.features[i].properties.Rating;
         }
 
-        let btn = document.getElementsByTagName("button")[0];
+        let btn = document.getElementById("sort-button");
         btn.addEventListener('click', sortTable);
       };
 
